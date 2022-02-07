@@ -45,37 +45,37 @@ function mostraCandidato() {
 
     if (num1.value == '1' && num2.value == '3') {
 
-        nomeTitulo.innerText = 'LULA';
-        nomeCandidato.innerHTML = 'Nome: <b>LUIS INÁCIO LULA DA SILVA</b>';
-        partido.innerHTML = 'Partido: <b>PT</b>';
-        foto.style.backgroundImage = "url('./images/lula.jpg')";
+        nomeTitulo.innerText = candidato.lula.nome;
+        nomeCandidato.innerHTML = `Nome: <b>${candidato.lula.nomeCompleto}</b>`;
+        partido.innerHTML = `Partido: <b>${candidato.lula.partido}</b>`;
+        foto.style.backgroundImage = candidato.lula.foto;
         legenda.style.display = 'flex';
     }
 
     else if (num1.value == '1' && num2.value == '7') {
 
-        nomeTitulo.innerText = 'BOLSONARO';
-        nomeCandidato.innerHTML = 'Nome: <b>JAIR MESSIAS BOLSONARO</b>';
-        partido.innerHTML = 'Partido: <b>PSL</b>';
-        foto.style.backgroundImage = "url('./images/bolsonaro.jpg')";
+        nomeTitulo.innerText = candidato.bolsonaro.nome;
+        nomeCandidato.innerHTML = `Nome: <b>${candidato.bolsonaro.nomeCompleto}</b>`;
+        partido.innerHTML = `Partido: <b>${candidato.bolsonaro.partido}</b>`;
+        foto.style.backgroundImage = candidato.bolsonaro.foto;
         legenda.style.display = 'flex';
     }
-    
+
     else if (num1.value == '1' && num2.value == '2') {
 
-        nomeTitulo.innerText = 'CIRO GOMES';
-        nomeCandidato.innerHTML = 'Nome: <b>CIRO FERREIRA GOMES</b>';
-        partido.innerHTML = 'Partido: <b>PDT</b>';
-        foto.style.backgroundImage = "url('./images/ciro.jpg')";
+        nomeTitulo.innerText = candidato.ciro.nome;
+        nomeCandidato.innerHTML = `Nome: <b>${candidato.ciro.nomeCompleto}</b>`;
+        partido.innerHTML = `Partido: <b>${candidato.ciro.partido}</b>`;
+        foto.style.backgroundImage = candidato.ciro.foto;
         legenda.style.display = 'flex';
     }
 
     else if (num1.value == '1' && num2.value == '5') {
 
-        nomeTitulo.innerText = 'SERGIO MORO';
-        nomeCandidato.innerHTML = 'Nome: <b>SERGIO FERNANDO MORO</b>';
-        partido.innerHTML = 'Partido: <b>NOVO</b>';
-        foto.style.backgroundImage = "url('./images/moro.jpg')";
+        nomeTitulo.innerText = candidato.moro.nome;
+        nomeCandidato.innerHTML = `Nome: <b>${candidato.moro.nomeCompleto}</b>`;
+        partido.innerHTML = `Partido: <b>${candidato.moro.partido}</b>`;
+        foto.style.backgroundImage = candidato.moro.foto;
         legenda.style.display = 'flex';
     }
 
@@ -106,7 +106,7 @@ function confirma() {
 
             document.getElementById('fim').style.display = 'flex';
             somConfirma.play()
-        }else{
+        } else {
             console.log('INVALIDO')
         }
     }
@@ -141,4 +141,35 @@ function votoBranco() {
     somNumeros.play();
     foto.style.backgroundImage = "url('./images/person-icon.png')";
     legenda.style.display = 'none';
+}
+
+let candidato = {
+
+    lula: {
+        nome: 'LULA',
+        nomeCompleto: 'LUIS INÁCIO LULA DA SILVA',
+        partido: 'PT',
+        foto: "url('./images/lula.jpg')",
+    },
+
+    bolsonaro: {
+        nome: 'BOLSONARO',
+        nomeCompleto: 'JAIR MESSIAS BOLSONARO',
+        partido: 'PSL',
+        foto: "url('./images/bolsonaro.jpg')",
+    },
+
+    ciro: {
+        nome: 'CIRO GOMES',
+        nomeCompleto: 'CIRO FERREIRA GOMES',
+        partido: 'PDT',
+        foto: "url('./images/ciro.jpg')",
+    },
+
+    moro: {
+        nome: 'SERGIO MORO',
+        nomeCompleto: 'SERGIO FERNANDO MORO',
+        partido: 'NOVO',
+        foto: "url('./images/moro.jpg')",
+    },
 }
