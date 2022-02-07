@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna Eletrônica</title>
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+</head>
+
+<body>
+
+    <div id="container">
+
+        <div id="urnaContainer">
+
+            <div id="visor">
+
+                <div id="fim">FIM</div>
+
+                <div id="candidato">
+
+                    <div id="dadosCandidato">
+                        Seu voto para
+
+                        <h2 id="nomeTitle">CANDIDATO</h2>
+
+                        <div id="numero">
+                            Número:
+                            <div id="num1" value=""></div>
+                            <div id="num2" value=""></div>
+                        </div>
+
+                        <p id="nomeCandidato">Nome:</b> </p>
+                        <p id="partidoCandidato">Partido:</p>
+                    </div>
+
+                    <div id="fotoPresidente">
+                        <div id="legenda">PRESIDENTE</div>
+                    </div>
+
+                </div>
+
+                <div id="instrucoes">
+                    <p>Aperte a tecla:
+                        <br>BRANCO para VOTAR EM BRANCO
+                        <br>LARANJA para CORRIGIR
+                        <br>VERDE para CONFIRMAR
+                    </p>
+                </div>
+
+            </div>
+
+            <div id="botoes">
+                <button id="btn1" class="btn" value="1">1</button>
+                <button id="btn2" class="btn" value="2">2</button>
+                <button id="btn3" class="btn" value="3">3</button>
+                <button id="btn4" class="btn" value="4">4</button>
+                <button id="btn5" class="btn" value="5">5</button>
+                <button id="btn6" class="btn" value="6">6</button>
+                <button id="btn7" class="btn" value="7">7</button>
+                <button id="btn8" class="btn" value="8">8</button>
+                <button id="btn9" class="btn" value="9">9</button>
+                <button id="btn0" class="btn" value="0">0</button>
+
+                <button id="btnBranco" class="btnAcao">BRANCO</button>
+                <button id="btnCorrige" class="btnAcao">CORRIGE</button>
+                <button id="btnConfirma" class="btnAcao">CONFIRMA</button>
+            </div>
+
+            <audio id="somNumeros" src="./audio/som-numeros.mp3" type="audio/mpeg"></audio>
+            <audio id="somConfirma" src="./audio/som-confirma.mp3" type="audio/mpeg"></audio>
+
+        </div>
+
+        <footer>
+            <p>Dev. Guedes</p>
+            <a href="https://github.com/pauloguedes96">
+                <img src="./images/GitHub-Mark-32px.png" alt="">
+            </a>
+        </footer>
+
+    </div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

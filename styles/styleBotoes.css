@@ -1,0 +1,139 @@
+#botoes{
+    width: 260px;
+    height: 300px;
+    background-color: var(--fundo-botoes);
+    display: grid;
+    grid-template: auto auto auto auto auto / auto auto auto;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    gap: 13px 5px;
+    border-radius: 5px;
+}
+
+.btn{
+    /* padding: 5px 18px; */
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+    padding: 18px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font);
+    font-weight: 500;
+    font-size: 20px;
+    background-color: var(--botoes);
+    color: var(--branco);
+    border-radius: 5px;
+    border: none;
+    border-bottom: solid 3px rgb(100, 100, 100);
+}
+
+.btn:active{
+    border-bottom: none;
+}
+
+#btn1{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+#btn2{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+#btn3{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+
+#btn4{
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+#btn5{
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+#btn6{
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+
+#btn7{
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+#btn8{
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+#btn9{
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+#btn0{
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+/* ===================================== */
+
+.btnAcao{
+    width: 75px;
+    height: 35px;
+    cursor: pointer;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font);
+    font-weight: 500;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    border-bottom: solid 3px rgb(136, 136, 136);
+}
+
+.btnAcao:active{
+    border-bottom:none;
+}
+
+#btnBranco{
+    background-color: var(--branco);
+}
+
+#btnCorrige{
+    background-color: #FC8102;
+}
+
+#btnConfirma{
+    background-color: #60BC4F;
+}
